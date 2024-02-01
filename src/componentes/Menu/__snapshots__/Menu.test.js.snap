@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Deve renderizar uma lista de links com a classe link 1`] = `
+<a
+  class="links"
+  href="/"
+>
+  Inicial
+</a>
+`;
+
+exports[`Deve renderizar uma lista de links com a classe link 2`] = `
+<a
+  class="links"
+  href="/"
+>
+  Transferências
+</a>
+`;
+
+exports[`Deve renderizar uma lista de links com a classe link 3`] = `
+<a
+  class="links"
+  href="/"
+>
+  Investimentos
+</a>
+`;
+
+exports[`Deve renderizar uma lista de links com a classe link 4`] = `
+<a
+  class="links"
+  href="/"
+>
+  Outros serviços
+</a>
+`;
