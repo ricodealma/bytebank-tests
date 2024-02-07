@@ -19,18 +19,19 @@ describe('hooks/useListaTransacoes.js', () => {
             //Arrange
 
             buscaTransacoes.mockImplementation(() => mockTransacao)
-            let { result } = renderHook(() => useListaTransacoes())
+            let render = null
 
             //Act
-            expect(result.current[0]).toEqual([])
+            render = renderHook(() => useListaTransacoes())
+            expect(render.result.current[0]).toEqual([])
             await act(async () => {
-                result.current[1]();
+                render.result.current[1]();
             })
 
             //Assert
 
 
-            expect(result.current[0]).toEqual(mockTransacao)
+            expect(render.result.current[0]).toEqual(mockTransacao)
 
         })
 })
