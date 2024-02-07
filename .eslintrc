@@ -19,9 +19,8 @@
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "react/self-closing-comp": "warn",
-    "no-unused-vars": "warn",
-    "import/no-unresolved": "off",
-    "camelcase":"warn"
+    "no-unused-vars": "off",
+    "import/no-unresolved": "off"
   },
   "plugins": [
     "react",
