@@ -1,7 +1,6 @@
 import api from './api';
 
-export async function
-  buscaSaldo() {
+export async function buscaSaldo() {
   try {
     const resp = await api.get('/saldo');
     return resp.data.valor;
@@ -11,10 +10,8 @@ export async function
 }
 
 export async function atualizaSaldo(novoSaldo) {
-  try {
-    const resp = await api.put('/saldo', { valor: novoSaldo });
-    return resp.status;
-  } catch (err) {
-    return 'Erro na requisição';
-  }
+  api
+    .put('/saldo', { valor: novoSaldo })
+    .then((resp) => console.log(resp.status))
+    .catch((err) => console.log(err));
 }
